@@ -1,78 +1,117 @@
-/* 웹 폰트(Pretendard) 불러오기 */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yeux — Art & Design Archive</title>
+    <style>
+        /* Pretendard Web Font */
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-/* 전체 배경 및 기본 글꼴 설정 */
-body {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
-    background-color: #f5f6f8; /* 은은한 연회색 배경 */
-    color: #333333;
-    margin: 0;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-}
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f5f6f8;
+            color: #333333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
 
-/* 중앙 흰색 카드 박스 */
-.container {
-    max-width: 640px;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 32px;
-    border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-}
+        .container {
+            max-width: 640px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 36px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        }
 
-/* 메인 타이틀 (이름/직함) */
-h1 {
-    font-size: 26px;
-    font-weight: 700;
-    color: #111111;
-    margin-top: 0;
-    margin-bottom: 8px;
-}
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111111;
+            margin-top: 0;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
 
-/* Sub 타이틀 (소개글) */
-p {
-    font-size: 15px;
-    color: #666666;
-    line-height: 1.6;
-}
+        header p {
+            font-size: 15px;
+            color: #666666;
+            line-height: 1.6;
+            margin: 0;
+        }
 
-/* 섹션 제목 (About, Projects) */
-h2 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #222222;
-    border-bottom: 2px solid #edf2f7;
-    padding-bottom: 8px;
-    margin-top: 32px;
-}
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #222222;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 8px;
+            margin-top: 36px;
+        }
 
-/* 프로젝트 리스트 디자인 */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 16px 0 0 0;
-}
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0 0 0;
+        }
 
-li {
-    background-color: #f8f9fa;
-    padding: 14px 16px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    border: 1px solid #e9ecef;
-}
+        li {
+            background-color: #f8f9fa;
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            border: 1px solid #e9ecef;
+            line-height: 1.5;
+        }
 
-li strong {
-    color: #000000;
-}
+        li strong {
+            color: #111111;
+            display: block;
+            margin-bottom: 4px;
+        }
 
-/* 하단 푸터 */
-footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 13px;
-    color: #888888;
-}
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: #888888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello, I'm [Your Name].</h1>
+            <p>An art collector archiving photos, graphics, and visual design inspirations.</p>
+        </header>
+
+        <section id="about">
+            <h2>About yeux</h2>
+            <p><strong>yeux</strong> is a personal archive where I curate and share photography, art pieces, and design elements that captivate my vision.</p>
+        </section>
+
+        <section id="collections">
+            <h2>Collections</h2>
+            <ul>
+                <li>
+                    <strong>Photography</strong>
+                    Capturing perspectives, atmospheres, and moments.
+                </li>
+                <li>
+                    <strong>Visual & Graphic Design</strong>
+                    Curated layouts, typography, and aesthetic forms.
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© yeux Archive. Contact: your-email@example.com</p>
+        </footer>
+    </div>
+</body>
+</html>
 
