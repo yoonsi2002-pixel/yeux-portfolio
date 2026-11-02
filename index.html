@@ -1,1 +1,78 @@
-<h1>나만의 포트폴리오</h1>
+/* 웹 폰트(Pretendard) 불러오기 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* 전체 배경 및 기본 글꼴 설정 */
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+    background-color: #f5f6f8; /* 은은한 연회색 배경 */
+    color: #333333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 중앙 흰색 카드 박스 */
+.container {
+    max-width: 640px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* 메인 타이틀 (이름/직함) */
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111111;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* Sub 타이틀 (소개글) */
+p {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* 섹션 제목 (About, Projects) */
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+    margin-top: 32px;
+}
+
+/* 프로젝트 리스트 디자인 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #e9ecef;
+}
+
+li strong {
+    color: #000000;
+}
+
+/* 하단 푸터 */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #888888;
+}
+
